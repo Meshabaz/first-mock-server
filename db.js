@@ -1,3 +1,3 @@
-const data = require("./data/data.json");
+const data = require("./data/items.json");
 
 module.exports = { data };
