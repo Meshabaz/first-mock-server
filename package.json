@@ -2,13 +2,12 @@
   "name": "fake-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["shabaz, json-server, heroku, node, REST API"],
+  "author": "shabaz",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.1"
