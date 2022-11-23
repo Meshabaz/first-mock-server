@@ -1,4 +1,4 @@
-let api = "http://localhost:3200/dummy";
+let api = "https://first-mock-server.herokuapp.com/dummy";
 
 const getApi = async (url) => {
   let res = await fetch(url);
