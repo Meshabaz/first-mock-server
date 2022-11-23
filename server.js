@@ -7,7 +7,11 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3200; // <== You can change the port
 
 server.use(middlewares);
-server.use(router);
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+  })
+);
 
 server.listen(port);
 
