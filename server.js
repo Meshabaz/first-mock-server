@@ -12,3 +12,5 @@ server.use(router);
 server.listen(port);
 
 server.use(middlewares);
+
+// https://first-mock-server.herokuapp.com/dummy
