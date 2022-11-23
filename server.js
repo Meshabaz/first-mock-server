@@ -1,4 +1,4 @@
-const data = require("./dummy.json", "./items.json");
+const data = require("./dummy.json");
 
 const jsonServer = require("json-server");
 const server = jsonServer.create();
