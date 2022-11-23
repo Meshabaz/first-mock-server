@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "json-server --watch items.json --port 3200 "
+    "server": "json-server --watch ./data/dummy.json  --port 3200 "
   },
   "keywords": ["shabaz, json-server, heroku, node, REST API"],
   "author": "shabaz",
