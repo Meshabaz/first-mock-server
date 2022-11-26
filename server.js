@@ -17,5 +17,6 @@ server.use(middlewares);
 
 // https://radiant-daffodil-a36d1e.netlify.app/
 // https://first-mock-server.herokuapp.com/dummy
+// https://meshabaz.github.io/first-mock-server/
 
 // ========================> DEPLOYED SERVER AND WEBSITE LINKS <==============================//

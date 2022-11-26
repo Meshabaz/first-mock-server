@@ -40,3 +40,20 @@ const del = async (i) => {
   });
   getApi(api);
 };
+
+let radio = document.querySelectorAll('input[name="gender"]');
+
+const findSelected = async () => {
+  let selected = document.querySelector('input[name="gender"]:checked').value;
+
+  let url;
+  if (selected === "on") {
+    getApi(api);
+  } else {
+    getApi(`https://first-mock-server.herokuapp.com/dummy?gender=${selected}`);
+  }
+};
+
+radio.forEach((radioBtn) => {
+  radioBtn.addEventListener("change", findSelected);
+});
