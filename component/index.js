@@ -22,7 +22,21 @@ const show = (data) => {
     email.innerHTML = e.email;
     let gender = document.createElement("th");
     gender.innerHTML = e.gender;
-    row.append(slno, name, email, gender);
+    let removeTh = document.createElement("th");
+    let remove = document.createElement("button");
+    remove.innerHTML = "REMOVE";
+    remove.className = "btn btn-info";
+    remove.onclick = () => del(e.id);
+    removeTh.append(remove);
+    row.append(slno, name, email, gender, removeTh);
     document.querySelector("tbody").append(row);
   });
+};
+
+const del = async (i) => {
+  // alert(i);
+  let res = await fetch(`https://first-mock-server.herokuapp.com/dummy/${i}`, {
+    method: "DELETE",
+  });
+  getApi(api);
 };
